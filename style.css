@@ -2,12 +2,12 @@ body {
     font-family: 'Segoe UI', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: #f5f7fa;
+    background: #E3F2FD; /* Light blue background */
     color: #333;
 }
 
 header {
-    background: #6EB1D6;
+    background: #FF9913;
     color: #22223b;
     padding: 30px 0 20px 0;
     text-align: center;
@@ -31,36 +31,86 @@ header {
     display: block;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-    letter-spacing: 2px;
+/* --- Tabs Section --- */
+.tabs {
+    position: relative;
+    margin: 2em 0;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(34,34,59,0.08);
+}
+.tabs input[type="radio"] {
+    display: none;
+}
+.tabs ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1em 0;
+    border-bottom: 2px solid #FF9913;
+}
+.tabs ul li {
+    flex: 1 1 auto;
+    text-align: center;
+}
+.tabs ul li label {
+    display: block;
+    padding: 1em;
+    cursor: pointer;
+    font-weight: 500;
+    color: #333;
+    transition: background 0.2s, color 0.2s;
+    border-radius: 8px 8px 0 0;
+}
+.tabs ul li label:hover {
+    background: #FFE2B0;
+}
+.tabs input[type="radio"]:checked + input[type="radio"] ~ input[type="radio"] ~ input[type="radio"] ~ input[type="radio"] ~ ul li label[for="tab1"],
+.tabs input[type="radio"]:checked + ul li label[for="tab1"],
+.tabs input[type="radio"]:checked ~ ul li label[for="tab1"],
+.tabs #tab1:checked ~ ul li label[for="tab1"],
+.tabs #tab2:checked ~ ul li label[for="tab2"],
+.tabs #tab3:checked ~ ul li label[for="tab3"],
+.tabs #tab4:checked ~ ul li label[for="tab4"],
+.tabs #tab5:checked ~ ul li label[for="tab5"] {
+    background: #FF9913;
+    color: #fff;
+}
+.tabs .tab-content > section {
+    display: none;
+    padding: 2em;
+    animation: fadein 0.5s;
+}
+.tabs #tab1:checked ~ .tab-content > section:nth-child(1),
+.tabs #tab2:checked ~ .tab-content > section:nth-child(2),
+.tabs #tab3:checked ~ .tab-content > section:nth-child(3),
+.tabs #tab4:checked ~ .tab-content > section:nth-child(4),
+.tabs #tab5:checked ~ .tab-content > section:nth-child(5) {
+    display: block;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
-header p {
-    margin: 10px 0;
-    font-size: 1.2em;
-    color: #9a8c98;
-}
-
-nav a {
+.skill-badge {
+    display: inline-block;
+    background: #e3f2fd;
     color: #22223b;
-    margin: 0 10px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.2s;
+    border-radius: 16px;
+    padding: 6px 16px;
+    margin: 4px 6px 4px 0;
+    font-size: 1em;
+    font-weight: 500;
+    box-shadow: 0 1px 4px rgba(34,34,59,0.08);
 }
 
-nav a:hover {
-    color: #f2e9e4;
-}
-
+/* --- Other sections unchanged --- */
 .container {
     max-width: 800px;
     margin: 40px auto 0 auto;
     padding: 0 20px;
 }
-
 section {
     background: #fff;
     padding: 30px;
@@ -68,7 +118,6 @@ section {
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(34,34,59,0.06);
 }
-
 footer {
     background: #22223b;
     color: #c9ada7;
