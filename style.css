@@ -2,7 +2,7 @@ body {
     font-family: 'Segoe UI', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: #E3F2FD; /* Light blue background */
+    background: #E3F2FD; /* Light blue background everywhere */
     color: #333;
 }
 
@@ -35,10 +35,11 @@ header {
 .tabs {
     position: relative;
     margin: 2em 0;
-    background: #fff;
+    background: #E3F2FD; /* Make tabs background match site */
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(34,34,59,0.08);
+    box-shadow: 0 2px 8px rgba(34,34,59,0.04);
 }
+
 .tabs input[type="radio"] {
     display: none;
 }
@@ -48,6 +49,7 @@ header {
     padding: 0;
     margin: 0 0 1em 0;
     border-bottom: 2px solid #FF9913;
+    background: transparent;
 }
 .tabs ul li {
     flex: 1 1 auto;
@@ -61,13 +63,11 @@ header {
     color: #333;
     transition: background 0.2s, color 0.2s;
     border-radius: 8px 8px 0 0;
+    background: transparent;
 }
 .tabs ul li label:hover {
     background: #FFE2B0;
 }
-.tabs input[type="radio"]:checked + input[type="radio"] ~ input[type="radio"] ~ input[type="radio"] ~ input[type="radio"] ~ ul li label[for="tab1"],
-.tabs input[type="radio"]:checked + ul li label[for="tab1"],
-.tabs input[type="radio"]:checked ~ ul li label[for="tab1"],
 .tabs #tab1:checked ~ ul li label[for="tab1"],
 .tabs #tab2:checked ~ ul li label[for="tab2"],
 .tabs #tab3:checked ~ ul li label[for="tab3"],
@@ -79,6 +79,8 @@ header {
 .tabs .tab-content > section {
     display: none;
     padding: 2em;
+    background: #E3F2FD; /* Ensure tab section matches background */
+    border-radius: 0 0 8px 8px;
     animation: fadein 0.5s;
 }
 .tabs #tab1:checked ~ .tab-content > section:nth-child(1),
@@ -95,7 +97,7 @@ header {
 
 .skill-badge {
     display: inline-block;
-    background: #e3f2fd;
+    background: #fff;
     color: #22223b;
     border-radius: 16px;
     padding: 6px 16px;
@@ -105,19 +107,74 @@ header {
     box-shadow: 0 1px 4px rgba(34,34,59,0.08);
 }
 
-/* --- Other sections unchanged --- */
+/* --- Sections and Container --- */
 .container {
     max-width: 800px;
     margin: 40px auto 0 auto;
     padding: 0 20px;
+    background: transparent; /* Remove white background */
 }
 section {
-    background: #fff;
+    background: transparent; /* Remove white background */
     padding: 30px;
     margin-bottom: 30px;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(34,34,59,0.06);
+    box-shadow: none; /* Remove shadow for seamless background */
 }
+
+/* Uniform cards for summary/experience */
+.profile-card {
+    background: #E3F2FD;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(34,34,59,0.06);
+    padding: 32px 28px 28px 28px;
+    margin-bottom: 32px;
+    border: 1px solid #BBDEFB;
+}
+
+.section-title {
+    font-size: 1.6em;
+    font-weight: 600;
+    color: #22223b;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    text-shadow: 0 1px 0 #fff;
+}
+
+.job-block h3 {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #333;
+}
+.company {
+    font-weight: 500;
+    color: #1976D2;
+    margin-left: 8px;
+}
+.dates {
+    font-size: 0.95em;
+    color: #616161;
+    margin-left: 12px;
+}
+.job-block ul {
+    margin: 0 0 0 16px;
+    padding: 0;
+    list-style: disc inside;
+}
+.job-block ul li {
+    margin-bottom: 10px;
+    font-size: 1em;
+    line-height: 1.6;
+    color: #333;
+}
+#summary p {
+    font-size: 1.07em;
+    color: #333;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
 footer {
     background: #22223b;
     color: #c9ada7;
