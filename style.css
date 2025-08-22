@@ -7,8 +7,8 @@ body {
 }
 
 header {
-    background: #22223b;
-    color: #fff;
+    background: #FFF7C0;
+    color: #22223b;
     padding: 30px 0 20px 0;
     text-align: center;
 }
@@ -20,14 +20,15 @@ header {
 }
 
 .profile-photo {
-    width: 90px;
-    height: 90px;
+    width: 90px !important;
+    height: 90px !important;
     object-fit: cover;
     border-radius: 50%;
     border: 3px solid #9a8c98;
     box-shadow: 0 2px 8px rgba(34,34,59,0.12);
     margin-bottom: 15px;
     background: #fff;
+    display: block;
 }
 
 header h1 {
@@ -39,11 +40,11 @@ header h1 {
 header p {
     margin: 10px 0;
     font-size: 1.2em;
-    color: #c9ada7;
+    color: #9a8c98;
 }
 
 nav a {
-    color: #9a8c98;
+    color: #22223b;
     margin: 0 10px;
     text-decoration: none;
     font-weight: bold;
