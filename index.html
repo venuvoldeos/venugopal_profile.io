@@ -1,159 +1,67 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Venugopal Narayana | DevOps Engineer</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <div class="container header-center">
-            <img src="IMG_2726.jpg" alt="Venugopal Narayana" class="profile-photo">
-            <h1>Venugopal Narayana</h1>
-            <p>DevOps Engineer @ Cisco Systems</p>
-            <nav>
-                <a href="venugopalnv@gmail.com">MailTo</a>
-                <a href="https://www.linkedin.com/in/venugopalnarayana/?trk=opento_sprofile_details">LinkedIn</a>
-                <a href="https://github.com/venuvoldeos/venuvoldeos">GitHub</a>
-                <a href="https://venuvoldeos.blogspot.com/">Blog</a>
-                <a href="#contact">Contact:+91 9986259026</a>
-            </nav>
+<!-- ...existing HTML above... -->
+<section id="skills" class="container">
+    <h2>Skills</h2>
+    <div class="tabs">
+        <input type="radio" id="tab1" name="tab-control" checked>
+        <input type="radio" id="tab2" name="tab-control">
+        <input type="radio" id="tab3" name="tab-control">
+        <input type="radio" id="tab4" name="tab-control">
+        <input type="radio" id="tab5" name="tab-control">
+        <ul>
+            <li title="Cloud"><label for="tab1" role="button"><span>Cloud Platforms</span></label></li>
+            <li title="CI/CD"><label for="tab2" role="button"><span>CI/CD Tools</span></label></li>
+            <li title="Containers"><label for="tab3" role="button"><span>Containerization</span></label></li>
+            <li title="IaC"><label for="tab4" role="button"><span>IaC & Config</span></label></li>
+            <li title="Other"><label for="tab5" role="button"><span>Other Skills</span></label></li>
+        </ul>
+        <div class="tab-content">
+            <section>
+                <p>
+                    <span class="skill-badge">AWS</span>
+                    <span class="skill-badge">Nokia Proprietary Cloud</span>
+                    <span class="skill-badge">Telco Cloud</span>
+                </p>
+            </section>
+            <section>
+                <p>
+                    <span class="skill-badge">Jenkins</span>
+                    <span class="skill-badge">GitHub Actions</span>
+                    <span class="skill-badge">GitLab CI</span>
+                </p>
+            </section>
+            <section>
+                <p>
+                    <span class="skill-badge">Docker</span>
+                    <span class="skill-badge">Docker Swarm</span>
+                    <span class="skill-badge">Kubernetes</span>
+                </p>
+            </section>
+            <section>
+                <p>
+                    <span class="skill-badge">Ansible</span>
+                </p>
+            </section>
+            <section>
+                <p>
+                    <span class="skill-badge">Git</span>
+                    <span class="skill-badge">GitHub</span>
+                    <span class="skill-badge">Perforce</span>
+                    <span class="skill-badge">Subversion</span>
+                    <span class="skill-badge">ClearCase</span>
+                    <span class="skill-badge">Bash</span>
+                    <span class="skill-badge">Make | CMAKE</span>
+                    <span class="skill-badge">Bazel</span>
+                    <span class="skill-badge">ANT | MAVEN</span>
+                    <span class="skill-badge">BitBake Builds</span>
+                    <span class="skill-badge">Microservices Architecture</span>
+                    <span class="skill-badge">Prometheus</span>
+                    <span class="skill-badge">Grafana</span>
+                    <span class="skill-badge">Nginx</span>
+                    <span class="skill-badge">Linux (Ubuntu | CentOS | RHEL)</span>
+                    <span class="skill-badge">Windows Server</span>
+                </p>
+            </section>
         </div>
-    </header>
-    <main>
-        <section id="summary" class="container">
-            <h2>Professional Summary</h2>
-            <p>
-                Seasoned Build & Release / SCM Engineer with nearly 15 years of practical experience in source code management, CI/CD pipeline automation, build and release engineering, and DevOps practices. Currently serving as a Lead DevOps Engineer at Cisco Systems, I specialize in managing source code repositories, optimizing build and release processes, implementing and administering CI/CD pipelines as code, and overseeing infrastructure for NextGen Firewall products. My expertise includes build profiling and optimisation, as well as hands-on administration of Git and Jenkins environments.
-            </p>
-        </section>
-        <section id="experience" class="container">
-            <h2>Experience</h2>
-            <h3>DevOps Engineer | Cisco Systems <span style="font-weight:normal">July 2017 - Present</span></h3>
-            <ul>
-                <li>I work as a DevOps Lead and Build & Release Engineer supporting source code management and CI/CD systems for NextGen Firewall products. 
-Acted as the primary point of contact for DevOps and build/release tasks for the development teams, facilitating collaboration between global teams. 
-Streamlined and consolidated developer build environments across multiple product lines, introduced pre-commit builds for better code commits and lesser build breakage, and automated build processes using Jenkins. 
-Migrated builds from legacy Freestyle Jenkins to Pipeline Jenkins for improved automation and maintainability. 
-Delivered critical hotfixes, patches, and releases to customer environments. 
-Authored comprehensive CI/DevOps documentation in Confluence. 
-Led build profiling and optimization initiatives, including Bazel migration, and virtualized build infrastructure for development teams. Automated application deployment and cloud VM configuration with Ansible. 
-Migrated legacy SCM systems to GitHub, modernized review workflows, and enabled legacy builds on Kubernetes for enhanced scalability and resilience.
-                </li>
-            </ul>
-        </section>
-        <!-- Skills Section -->
-        <section class="mb-12 card">
-            <h2 class="text-2xl font-semibold section-title">Skills</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Cloud Platforms -->
-                <div>
-                    <h3 class="text-lg font-medium text-gray-100 mb-3 flex items-center"><i class="fas fa-cloud mr-2 text-indigo-500"></i>Cloud Platforms</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="skill-badge">AWS</span>
-                        <span class="skill-badge">Nokia Proprietary Cloud</span>
-                        <span class="skill-badge">Telco Cloud</span>
-                    </div>
-                </div>
-                <!-- CI/CD Tools -->
-                <div>
-                    <h3 class="text-lg font-medium text-gray-100 mb-3 flex items-center"><i class="fas fa-project-diagram mr-2 text-indigo-500"></i>CI/CD Tools</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="skill-badge">Jenkins</span>
-                        <span class="skill-badge">GitHub Actions</span>
-                        <span class="skill-badge">GitLab CI</span>
-                    </div>
-                </div>
-                <!-- Containerization -->
-                <div>
-                    <h3 class="text-lg font-medium text-gray-100 mb-3 flex items-center"><i class="fas fa-docker mr-2 text-indigo-500"></i>Containerization</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="skill-badge">Docker</span>
-                        <span class="skill-badge">Docker Swarm</span>
-                        <span class="skill-badge">Kubernetes</span>
-                    </div>
-                </div>
-                <!-- IaC & Configuration -->
-                <div>
-                    <h3 class="text-lg font-medium text-gray-100 mb-3 flex items-center"><i class="fas fa-code mr-2 text-indigo-500"></i>IaC & Configuration</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="skill-badge">Ansible</span>
-                    </div>
-                </div>
-                <!-- Version Control -->
-                <div>
-                    <h3 class="text-lg font-medium text-gray-100 mb-3 flex items-center"><i class="fas fa-code-branch mr-2 text-indigo-500"></i>Version Control</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="skill-badge">Git</span>
-                        <span class="skill-badge">GitHub</span>
-                        <span class="skill-badge">Perforce</span>
-                        <span class="skill-badge">Subversion</span>
-                        <span class="skill-badge">ClearCase</span>
-                    </div>
-                </div>
-                <!-- Scripting Languages -->
-                <div>
-                    <h3 class="text-lg font-medium text-gray-100 mb-3 flex items-center"><i class="fas fa-laptop-code mr-2 text-indigo-500"></i>Scripting Languages</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="skill-badge">Bash</span>
-                    </div>
-                </div>
-                <!-- Monitoring & Logging -->
-                <div>
-                    <h3 class="text-lg font-medium text-gray-100 mb-3 flex items-center"><i class="fas fa-chart-line mr-2 text-indigo-500"></i>Monitoring & Logging</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="skill-badge">Prometheus</span>
-                        <span class="skill-badge">Grafana</span>
-                    </div>
-                </div>
-                <!-- Web Servers -->
-                <div>
-                    <h3 class="text-lg font-medium text-gray-100 mb-3 flex items-center"><i class="fas fa-server mr-2 text-indigo-500"></i>Web Servers</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="skill-badge">Nginx</span>
-                    </div>
-                </div>
-                <!-- Operating Systems -->
-                <div>
-                    <h3 class="text-lg font-medium text-gray-100 mb-3 flex items-center"><i class="fas fa-desktop mr-2 text-indigo-500"></i>Operating Systems</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="skill-badge">Linux (Ubuntu | CentOS | RHEL)</span>
-                        <span class="skill-badge">Windows Server</span>
-                    </div>
-                </div>
-                <!-- Other Tools/Concepts -->
-                <div>
-                    <h3 class="text-lg font-medium text-gray-100 mb-3 flex items-center"><i class="fas fa-tools mr-2 text-indigo-500"></i>Build Tools</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="skill-badge">Make | CMAKE</span>
-                        <span class="skill-badge">Bazel</span>
-                        <span class="skill-badge">ANT | MAVEN</span>
-                        <span class="skill-badge">BitBake Builds</span>
-                        <span class="skill-badge">Microservices Architecture</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="education" class="container">
-            <h2>Education</h2>
-            <p>
-                <strong>Bachelor of Science in Electronics</strong><br>
-                Bangalore University
-            </p>
-        </section>
-        <section id="contact" class="container">
-            <h2>Contact</h2>
-            <ul>
-                <li><strong>Email:</strong> <a href="mailto:venugopalnv@gmail.com">venugopalnv@gmail.com</a></li>
-                <li><strong>Phone:</strong> +91 9986259026</li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <div class="container">
-            <small>&copy; 2025 Venugopal Narayana. All rights reserved.</small>
-        </div>
-    </footer>
-</body>
-</html>
+    </div>
+</section>
+<!-- ...existing HTML below... -->
